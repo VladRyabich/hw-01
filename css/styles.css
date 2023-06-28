@@ -1,3 +1,126 @@
+/* Root */
+:root {
+    --main-color-text: #2E2F42;
+}
+
+/* Common styles */
 body {
-    
+    font-family: "Roboto" sans-serif;
+    color: var(--main-color-text);
+}
+.link {
+    text-decoration: none;
+}
+
+/* Header block */
+.header {
+}
+.header-nav {
+}
+.logo {
+}
+.logo-accent {
+}
+.header-list {
+}
+.header-item {
+}
+.header-list-con {
+}
+.header-item-con {
+}
+
+/* Main block */
+.main {
+
+}
+.section {
+
+}
+
+/* Hero block */
+.hero {
+}
+.hero-title {
+}
+.hero-btn {
+}
+
+/* Features block */
+.features {
+}
+.features-title {
+}
+.features-list {
+}
+.features-item {
+}
+.features-subtitle {
+}
+.features-text {
+}
+
+/* Gallery block */
+.gallery {
+}
+.gallery-title {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+
+/* Team block */
+.team {
+}
+.team-title {
+}
+.team-list {
+}
+.team-item {
+}
+.team-img {
+}
+.taem-name-title {
+}
+.team-text {
+}
+
+
+/* Portfolio page */
+
+/* Filters block */
+.filters-title {
+}
+.filters-list {
+}
+.filters-item {
+}
+.filters-btn {
+}
+
+/* Cards block */
+.cards-title {
+}
+.cards-list {
+}
+.cards-item {
+}
+.cards-img {
+}
+.cards-subtitle {
+}
+.cards-text {
+}
+
+/* Footer section */
+.footer {
+}
+.logo {
+}
+.logo-accent {
+}
+.footer-text {
 }
