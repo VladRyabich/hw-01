@@ -163,7 +163,8 @@ body {
 
 }
 .section {
-
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* Hero block */
@@ -172,7 +173,6 @@ body {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 292px;
-    margin-bottom: 72px;
 }
 .hero-title {
     font-size: 56px;
@@ -201,9 +201,29 @@ body {
 
 /* Features block */
 .features {
-    margin-bottom: 72px;
 }
 .features-title {
+}
+.features-list-icon {
+    display: flex;
+    justify-content: center;
+}
+.features-item-icon {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+.features-item-icon:last-child {
+    margin-right: 0px;
+}
+.features-icon {
 }
 .features-list {
     display: flex;
@@ -226,7 +246,7 @@ body {
 
 /* Gallery block */
 .gallery {
-    margin-bottom: 72px;
+    padding-top: 0px;
 }
 .gallery-title {
     font-size: 36px;
@@ -253,7 +273,6 @@ body {
 /* Team block */
 .team {
     background-color: var(--secondary-bg-color);
-    padding-bottom: 120px;
 }
 .team-title {
     font-size: 36px;
@@ -263,7 +282,6 @@ body {
     text-transform: capitalize;
     color: var(--secondary-color-text);
     text-align: center;
-    padding-top: 120px;
     padding-bottom: 72px;
 }
 .team-list {
@@ -298,6 +316,53 @@ body {
     margin-bottom: 32px;
 }
 
+/* Customers block */
+.customer {
+}
+.customer-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--secondary-color-text);
+    text-align: center;
+    padding-bottom: 72px;
+}
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.customer-item {
+}
+.customer-item:last-child {
+    margin-right: 0px;
+}
+.customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    fill: var(--clients-normal-color);
+    border: 1px solid var(--clients-normal-color);
+    border-radius: 4px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer-link:focus, .customer-link:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--clients-hover-color);
+    border: 1px solid var(--clients-hover-color);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+.customer-icon {
+}
 
 /* Portfolio page */
 
