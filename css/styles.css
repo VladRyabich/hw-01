@@ -302,9 +302,16 @@ body {
 /* Portfolio page */
 
 /* Filters block */
+.section-portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .filters-title {
 }
 .filters-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
 }
 .filters-item {
 }
@@ -316,6 +323,8 @@ body {
     color: var(--btn-secondary-text);
     border: 1px solid var(--border-btn-color);
     background-color: var(--secondary-btn-color);
+    padding: 12px 24px;
+    margin-left: 24px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -332,8 +341,14 @@ body {
 .cards-title {
 }
 .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+    margin-bottom: -48px;
 }
 .cards-item {
+    margin-right: 24px;
+    margin-bottom: 48px;
 }
 .cards-link {
 }
