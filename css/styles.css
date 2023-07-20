@@ -79,6 +79,11 @@ body {
 .item {
     list-style-type: none;
 }
+.button {
+    transition-property: cursor;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
 .button:hover,
 .button:focus {
     cursor: pointer;
@@ -162,6 +167,11 @@ body {
 .link.current {
     color: var(--active-nav-text);
 }
+.header-item.link.curent::after {
+    width: 44px;
+    height: 4px;
+    background-color: var(--active-nav-text);
+}
 /* Contacts */
 .header-list-con {
     display: inline-flex;
@@ -175,6 +185,9 @@ body {
 .header-link-con {
     letter-spacing: 0.32px;
     padding: 24px 0px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-con:hover,
 .header-link-con:focus {
@@ -203,7 +216,7 @@ body {
     background-size: contain;
     text-align: center;
     padding-top: 188px;
-    padding-bottom: 292px;
+    padding-bottom: 188px;
 }
 .hero-title {
     font-size: 56px;
@@ -224,10 +237,13 @@ body {
     background: var(--normal-btn-color);
     padding: 16px 32px;
     margin: 0 auto;
+    transition-property: background-color;      
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--hover-btn-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Features block */
@@ -363,6 +379,9 @@ body {
     border-radius: 50%;
     background-color: var(--normal-bg-social);
     fill: var(--color-icon-social);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link-social:hover, 
 .team-link-social:focus {
@@ -407,14 +426,11 @@ body {
     border: 1px solid var(--clients-normal-color);
     fill: var(--clients-normal-color);
     border-radius: 4px;
+    transition-property: border, fill, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:focus, .customer-link:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 168px;
-    height: 88px;
     border: 1px solid var(--clients-hover-color);
     fill: var(--clients-hover-color);
     border-radius: 4px;
@@ -448,6 +464,9 @@ body {
     background-color: var(--secondary-btn-color);
     padding: 12px 24px;
     margin-left: 24px;
+    transition-property: border-radius, box-shadow, border, color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -474,6 +493,14 @@ body {
     margin-right: 24px;
     margin-bottom: 48px;
     width: 360px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cards-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .cards-img {
 }
@@ -555,6 +582,9 @@ body {
     background-color: var(--normal-bg-social);
     fill: var(--color-icon-social);
     border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link-social:hover,
 .footer-link-social:focus {
