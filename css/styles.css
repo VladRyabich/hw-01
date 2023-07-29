@@ -37,6 +37,10 @@
     --bg-overlay-color: #4d5ae5;
     --bg-modal-color: #fcfcfc;
     --bg-modal-btn: #E7E9FC;
+
+    /* Block elements */
+    --items: 3;
+    --indent: 24px;
 }
 
 /* Common styles */
@@ -499,24 +503,25 @@ button {
 .cards-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -24px;
-    margin-bottom: -48px;
+    
+    gap: var(--indent);
+
     background-color: var(--main-bg-color);
 }
 .cards-item {
     position: relative;
     overflow: hidden;
-    margin-right: 24px;
-    margin-bottom: 48px;
+
     width: 360px;
+    
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards-item:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .cards-link {
     display: block;
